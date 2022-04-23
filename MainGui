@@ -1,0 +1,121 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Bread GUI"})
+local Tab = Window:MakeTab({
+	Name = "Bread",
+	Icon = "rbxassetid://9447438173",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Spawn 1 Bread",
+	Callback = function()
+      	local object = game:GetObjects('rbxassetid://6860890401')[1]
+        object.Parent = workspace
+        object.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+        game.Debris:AddItem(object,5)
+  	end    
+})
+Tab:AddButton({
+	Name = "Spawn 10 Breads",
+	Callback = function()
+      	for count = 1,10 do
+      	    local object = game:GetObjects('rbxassetid://6860890401')[1]
+            object.Parent = workspace
+            object.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game.Debris:AddItem(object,5)
+        end
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = " Prem Bread",
+	Icon = "rbxassetid://9447444017",
+	PremiumOnly = true
+})
+Tab:AddButton({
+	Name = "Auto Spawn 1 Bread (cannot undo)",
+	Callback = function()
+	    while true do
+      		    local object = game:GetObjects('rbxassetid://6860890401')[1]
+                object.Parent = workspace
+                object.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                game.Debris:AddItem(object,5)
+                wait(0.1)
+      	end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Auto Spawn 5 Bread (cannot undo)",
+	Callback = function()
+	    while true do
+	    
+		for count = 1,5 do
+      		    local object = game:GetObjects('rbxassetid://6860890401')[1]
+                object.Parent = workspace
+                object.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                game.Debris:AddItem(object,5)
+                wait(0.1)
+                
+end
+      	end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Auto Spawn 10 Bread (cannot undo)",
+	Callback = function()
+	    while true do
+	    		for count = 1,10 do
+      		    local object = game:GetObjects('rbxassetid://6860890401')[1]
+                object.Parent = workspace
+                object.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                game.Debris:AddItem(object,5)
+                wait(0.1)
+                end
+      	end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Auto Spawn 15 Bread (cannot undo)",
+	Callback = function()
+	    while true do
+	    		for count = 1,15 do
+      		    local object = game:GetObjects('rbxassetid://6860890401')[1]
+                object.Parent = workspace
+                object.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                game.Debris:AddItem(object,5)
+                wait(0.1)
+                end
+      	end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Auto Spawn 20 Bread (cannot undo)",
+	Callback = function()
+	    while true do
+	    		for count = 1,20 do
+      		    local object = game:GetObjects('rbxassetid://6860890401')[1]
+                object.Parent = workspace
+                object.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                game.Debris:AddItem(object,5)
+                wait(0.1)
+            end
+      	end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Auto Spawn 1000 Bread (Broken)",
+	Callback = function()
+	    while true do
+	    		for count = 1,1000 do
+      		    local object = game:GetObjects('rbxassetid://6860890401')[1]
+                object.Parent = workspace
+                object.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                game.Debris:AddItem(object,5)
+                wait(0.1)
+            end
+      	end
+  	end    
+})
